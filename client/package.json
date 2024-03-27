@@ -23,6 +23,13 @@
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
+  "server":{
+    "port": 3000,
+    "proxy": {
+      "/api":{
+      "target": "https://localhost:3001"
+    }}
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
